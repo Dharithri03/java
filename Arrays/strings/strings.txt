@@ -1,0 +1,60 @@
+ =========Strings====
+1. Pangram
+
+A pangram is a word or sentence that contains every letter of the English alphabet at least once. These are often used to test fonts or display all characters. You are given a string consisting of both uppercase and lowercase Latin letters. Your task is to check whether the given string is a pangram or not. The string is considered a pangram if it contains all 26 letters of the alphabet at least once, regardless of case (i.e., uppercase and lowercase letters are treated the same). If the string is a pangram, print "YES", otherwise print "NO".
+=======source code========
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int t = sc.nextInt();
+        String target = "codeforces";
+
+        for (int k = 0; k < t; k++) {
+
+            String s = sc.next();
+            int count = 0;
+
+            for (int i = 0; i < 10; i++) {
+                if (s.charAt(i) != target.charAt(i)) {
+                    count++;
+                }
+            }
+
+            System.out.println(count);
+        }
+    }
+}
+=========Love story===========
+2. Love Story
+
+Timur loves the word "codeforces", so he compares other strings with it. You are given multiple test cases, and in each test case, you receive a string of exactly 10 lowercase letters. Your task is to determine how many positions (indices) in the given string differ from the corresponding characters in the string "codeforces". You must compare each character at the same position without changing the order of characters. For each test case, output the number of positions where the characters are different.
+===========Source code==========
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int t = sc.nextInt();
+        String target = "codeforces";
+
+        for (int k = 0; k < t; k++) {
+
+            String s = sc.next();
+            int count = 0;
+
+            for (int i = 0; i < 10; i++) {
+                if (s.charAt(i) != target.charAt(i)) {
+                    count++;
+                }
+            }
+
+            System.out.println(count);
+        }
+    }
+}
